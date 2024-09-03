@@ -1,3 +1,4 @@
+import os
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 from urllib.parse import urlparse, parse_qsl
@@ -25,6 +26,20 @@ class MyHandler(BaseHTTPRequestHandler):
             # Send to browser
             self.wfile.write(bytes(content, "utf-8"))
             fp.close()
+
+        elif parsed.path.__contains__('.png'):
+            # retrieve image
+            filename = parsed.path[1:]
+            if os.path.exists(filename):
+                with open(filename, 'rb') as fp:
+                    content = fp.read()
+                self.send_response(200) #OK
+                self.send_header("Content-type", "image/png")
+                self.send_header("Content-length", len(content))
+                self.end_headers()
+
+                # send to browser
+                self.wfile.write(bytes(content))
 
         else:
             # generate 404 for GET requests that aren't the 3 files above
