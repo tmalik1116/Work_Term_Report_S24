@@ -55,6 +55,20 @@ class MyHandler(BaseHTTPRequestHandler):
                 # Send to browser
                 self.wfile.write(bytes(content))
 
+        elif parsed.path.__contains__('.mp4'):
+            # retrieve video
+            filename = parsed.path[1:]
+            if os.path.exists(filename):
+                with open(filename, 'rb') as fp:
+                    content = fp.read()
+                self.send_response(200) # OK
+                self.send_header("Content-type", "video/mp4")
+                self.send_header("Content-length", len(content))
+                self.end_headers()
+
+                # Send to browser
+                self.wfile.write(bytes(content))
+
         else:
             # generate 404 for GET requests that aren't the 3 files above
             self.send_response(404)
