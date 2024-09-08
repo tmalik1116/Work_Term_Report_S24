@@ -98,7 +98,7 @@
             <div class="card ms-4 mt-4 me-5" style="width: 55%; padding-top: 1%; height: auto; border-radius: 20px;;">
                 <img src="{{url_for('static', filename='square_image.jpg')}}" alt="Image of site" style="width: 99%; display: block; margin-left: auto; margin-right: auto; border-radius: 12px;">
                 <div class="card-body">
-                    <h3 class="card-title">Site Mock-up</h3>
+                    <h3>Site Mock-up</h3>
                 </div>
             </div>
         </div>
@@ -178,19 +178,19 @@
         <div style="margin-top: 3%; margin-left: 2%;"><h3>CRITICAL & CREATIVE THINKING - Problem Solving</h3></div> 
         <div id="goal-1" class="row" style="margin-top: 2%; margin-left: 2%; margin-right: 2%;">
             <!-- Row 1, write each goal here-->
-            <div class="card mt-3" style="padding-top: 1%; width: 23%; margin: auto; border-radius: 20px;">
+            <div class="card mt-3" style="padding-top: 1%; width: 23%; margin: auto; border-radius: 20px; height: 100%;">
                 <div class="card-title"><h5>Goal</h5></div>
                 <div class="card-body"><h6>One of my goals is to improve my problem solving skills through professional experience. I believe that this is already one of my strengths, however there is always room to grow, especially in a field as technical as Computer Science.</h6></div> 
             </div>
-            <div class="card mt-3" style="padding-top:1%; width: 23%; margin: auto; padding-bottom: 1.05%; border-radius: 20px;">
+            <div class="card mt-3" style="padding-top:1%; width: 23%; margin: auto; padding-bottom: 1.05%; border-radius: 20px; height: 100%;">
                 <div class="card-title"><h5>Action Plan</h5></div>
                 <div class="card-body"><h6>My plan for achieving this goal is to actively seek out opportunities wherever possible to approach problems in novel ways, and use my creative and critical thinking skills to find an optimal solution. </h6></div>
             </div>
-            <div class="card mt-3" style="padding-top: 1%; width: 23%; padding-bottom: 2.1%; margin: auto; border-radius: 20px;">
+            <div class="card mt-3" style="padding-top: 1%; width: 23%; padding-bottom: 2.1%; margin: auto; border-radius: 20px; height: 100%;">
                 <div class="card-title"><h5>Measure of Success</h5></div>
                 <div class="card-body"><h6>	I will measure the success of this goal through my own personal feelings about my work and the comments of my superiors.</h6></div>
             </div>
-            <div class="card mt-3" style="padding-top: 1%; width: 23%; margin: auto; border-radius: 20px;">
+            <div class="card mt-3" style="padding-top: 1%; width: 23%; margin: auto; border-radius: 20px; ">
                 <div class="card-title"><h5>Reflection</h5></div>
                 <div class="card-body"><h6>	I feel that I have achieved this goal with great success. I have often created my own software solutions to given problems, leveraging my expertise to save company time and reducing required manpower.</h6></div>
             </div>
@@ -283,6 +283,37 @@
                 <div class="card-body"><h6> I feel that I have achieved this goal with moderate success. I enjoyed needing to think critically about how to handle certain tasks, and whether something could be improved using a software script or not. Going forward this remains a goal that I would like to work towards. </h6></div>
             </div>
         </div>
+
+              
+        <script>
+            // Function to equalize card heights
+            function equalizeCardHeights(rowId) {
+                const row = document.getElementById(rowId);
+                const cards = row.querySelectorAll('.card');
+                let maxHeight = 0;
+
+                // Find the tallest card
+                cards.forEach(card => {
+                    maxHeight = Math.max(maxHeight, card.offsetHeight);
+                });
+
+                // Set the height of all cards to the maximum height
+                cards.forEach(card => {
+                    card.style.height = maxHeight + 'px'; 
+                });
+            }
+
+            // Call the function when the page loads
+            window.addEventListener('load', () => {
+                equalizeCardHeights('goal-1'); // Replace 'goal-1' with your row's ID
+                equalizeCardHeights('goal-2');
+                equalizeCardHeights('goal-3');
+                equalizeCardHeights('goal-4');
+                equalizeCardHeights('goal-5');
+            });
+        </script>
+
+    
 
 
     </body>
