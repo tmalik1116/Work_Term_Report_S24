@@ -128,38 +128,39 @@
             
             <!-- div for embedded video-->
             <div class="card" style="width: 50%; margin-top: 3%; margin-left: auto; margin-right: 2.5%; border-radius: 20px;">
-                <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 1.25%; margin-bottom: 1.25%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
-                    <source src="PXL_20240619_184109334.mp4" type="video/mp4">
+                <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 1.5%; margin-bottom: 1.5%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
+                    <source src="{{url_for('static', filename='PXL_20240619_184109334.mp4')}}" type="video/mp4">
                     This video is not supported by your browser.
                 </video>
             </div>
         </div>
+
+        <div><p style="display: block; margin-left: 3%; margin-top: 3%; font-size: small;">(I verified with my superiors that these clips were permissible to use and that no confidential information was present.)</p></div>
         
         <!-- Second Example (video row)-->
         <div class="row">
         
             <!-- div for embedded video-->
-            <div class="card" style="width: 40%; margin-top: 3%; margin-left: 3.5%; margin-right: 2.5%; border-radius: 20px;">
-                <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 1.25%; margin-bottom: 1.25%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
-                    <source src="PXL_20240906_202221972.mp4" type="video/mp4">
+            <div class="card" style="width: 42%; margin-top: 2%; margin-left: 3%; margin-right: 2.5%; border-radius: 20px;">
+                <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 2%; margin-bottom: 2%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
+                    <source src="{{url_for('static', filename='PXL_20240906_202221972.mp4')}}" type="video/mp4">
                     This video is not supported by your browser.
                 </video>
             </div>
-            <div class="col" style="width:auto; margin-top: 3%;">
+            <div class="col" style="width:auto; margin-top: 2%;">
                 <div class="card" style="width: auto; margin-left: auto; margin-right: 3.5%; border-radius: 20px;">
                     <div class="card-body">
-                        <h5>Visible to the right is one of the useful scripts I designed, quite early on into the job.</h5>
+                        <h5>Visible to the left is another useful tool I developed this summer.</h5>
                     </div>
                 </div>
                 <div class="card" style="width: auto; margin-top: 3%; margin-left: auto; margin-right: 3.5%; border-radius: 20px;">
                     <div class="card-body">
-                        <h5>Its original purpose was to read an Excel list of deficiencies in the new building, and input them into our construction management platform, Field View. It did this using a .csv version of the file, turning it into a Pandas DataFrame and automatically adding hundreds of entries into our database. With an average time of about 5 seconds per entry, this was monumentally faster than a member of our team needing to enter the data manually. </h5>
+                        <h5>There were numerous subtrades that were contracted by us, all of which had their own specific issues or incomplete work to be dealt with on site. My superiors wanted to continually remind them about the status of these items, so I realized that this would be another good opportunity to save time by automating the process. </h5>
                     </div>
                 </div>
                 <div class="card" style="width: auto; margin-top: 3%; margin-left: auto; margin-right: 3.5%; border-radius: 20px;">
                     <div class="card-body">
-                        <h5>As decent as this was to start with, there were limitations and certain items required manual intervention. I continually iterated on this program, adding functionality such as:<br>    - Reading directly from a PDF report without needing to convert to a CSV<br>    - Extracting the location of each item from its description and inputting it accordingly<br>    - Handling multiple files in succession without user intervention (passing it a list of filenames)
-                        </h5>
+                        <h5>This script carries out a complex series of steps, which would be more difficult for a person to carry out in such a repetitive manner. Although coding this did not pose a significant technical challenge, it still managed to save hours of our team's time due to the frequency at which these emails were to be sent out. It filters out each company's list of of ongoing tasks, downloads it as a PDF, and emails it to a given contact with a message specific to their company. </h5>
                     </div>
                 </div>
             </div>
