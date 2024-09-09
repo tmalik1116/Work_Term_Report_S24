@@ -38,33 +38,46 @@
 
         <div class="row">
 
-            <div class="card" style="width: 18%; margin-top: 2%; margin-left: 2.25%; border-radius: 20px;">
-                <img class="card-img-top" src="{{url_for('static', filename='chandos_logo.png')}}" alt="Company Logo" style="width: 90%; display: block; margin-left: auto; margin-right: auto">
-                <div class="card-body">
-                    <h3 class="card-title">Chandos Construction</h3>
+            <div style="width: 70%; margin-left: 1%;"> <!-- Wrapper div to not break formatting-->
+                <div class="row">
+        
+                    <div class="card" style="width: 22%; margin-top: 2%; margin-left: 2.25%; border-radius: 20px;">
+                        <img class="card-img-top" src="{{url_for('static', filename='chandos_logo.png')}}" alt="Company Logo" style="width: 90%; display: block; margin-left: auto; margin-right: auto">
+                        <div class="card-body">
+                            <h3 class="card-title">Chandos Construction</h3>
+                        </div>
+                    </div>
+        
+                    <div class="card" style="width: 71.5%; margin-top: 2%; margin-left: auto; margin-right: 2.25%; border-radius: 20px;">
+                        <div class="card-body">
+                            <h4>- <a href="https://www.chandos.com/">Chandos Construction</a> is a Canadian General Contracting company, constantly tackling large new projects nationwide. <br><br> - I was hired in order to help the Project Management team streamline the operations of a project in its final stages. <br><br>- The founders named the company after <a href="https://en.wikipedia.org/wiki/Chandos_Lake">Chandos Lake,</a> - a body of water belonging to Ontario's Kawartha Highlands - a place that had a history in both of their upbringings. </h4>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="row"> <!--Second row, testing scrolling-->
+        
+                    <div class="card" style="width: 22%; margin-top: 2%; margin-left: 2.25%; padding-top: 3%; border-radius: 20px;">
+                        <img src="{{url_for('static', filename='tech_logo.png')}}" alt="Python Logo" style="width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 8%;">
+                        <div class="card-body">
+                            <h3 class="card-title">Technologies Used</h3>
+                        </div>
+                    </div>
+        
+                    <div class="card" style="width: 71.5%; margin-top: 2%; margin-left: auto; margin-right: 2.25%; border-radius: 20px;">
+                        <div class="card-body">
+                            <h4>The company has large branches all over Canada, with regional head offices in Edmonton, Vancouver, Toronto, Chalk River, Red Deer, Calgary, and Ottawa. <br><br> I was employed by the Toronto division, stationed in the Aurora site office, and spent nearly the entire co-op term working on this project. <br><br> Although the position I held was not typically taken by Computer Science students, I introduced some of my unique skills and managed to tailor the job to my areas of expertise due to my strong initiative. </h4>
+                        </div>
+                    </div>
+        
                 </div>
             </div>
 
-            <div class="card" style="width: 75.5%; margin-top: 2%; margin-left: auto; margin-right: 2.25%; border-radius: 20px;">
-                <div class="card-body">
-                    <h4>- <a href="https://www.chandos.com/">Chandos Construction</a> is a Canadian General Contracting company, tackling large new projects nationwide. <br><br> - I was hired in order to help the Project Management team streamline the operations of a project in its final stages. <br><br>- The founders named the company after Chandos Lake, - a body of water belonging to Ontario's Kawartha Highlands - a place that had a history in both of their upbringings. </h4>
-                </div>
-            </div>
+            <!-- Photo of lake-->
+            <div class="card" style="width: 26.5%; border-radius: 20px; margin-top: 1.5%; margin-right: 2%">
 
-        </div>
-        <div class="row"> <!--Second row, testing scrolling-->
+                <img src="{{url_for('static', filename='lake_image.png')}}" width="97%" height="95%" style="display: block; margin: auto; border-radius: 12px; object-fit: cover;">
 
-            <div class="card" style="width: 18%; margin-top: 2%; margin-left: 2.25%; padding-top: 3%; border-radius: 20px;">
-                <img src="{{url_for('static', filename='python_logo.png')}}" alt="Python Logo" style="width: 65%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 8%;">
-                <div class="card-body">
-                    <h3 class="card-title">Technologies Used</h3>
-                </div>
-            </div>
-
-            <div class="card" style="width: 75.5%; margin-top: 2%; margin-left: auto; margin-right: 2.25%; border-radius: 20px;">
-                <div class="card-body">
-                    <h4>Second row of cards</h4>
-                </div>
             </div>
 
         </div>
@@ -95,8 +108,8 @@
             </div>
 
             
-            <div class="card ms-4 mt-4 me-5" style="width: 55%; padding-top: 1%; height: auto; border-radius: 20px;;">
-                <img src="{{url_for('static', filename='square_image.jpg')}}" alt="Image of site" style="width: 99%; display: block; margin-left: auto; margin-right: auto; border-radius: 12px;">
+            <div class="card ms-3 mt-4 me-5" style="width: 55%; padding-top: 1%; height: auto; border-radius: 20px;;">
+                <img src="{{url_for('static', filename='square_image.jpg')}}" height="100%" width="100%" alt="Image of site" style="width: 99%; display: block; margin-left: auto; margin-right: auto; border-radius: 12px; object-fit: cover;">
                 <div class="card-body">
                     <h3>Site Mock-up</h3>
                 </div>
@@ -135,19 +148,19 @@
             </div>
         </div>
 
-        <div><p style="display: block; margin-left: 3%; margin-top: 3%; font-size: small;">(I verified with my superiors that these clips were permissible to use and that no confidential information was present.)</p></div>
+        <div><p style="display: block; margin-left: 3%; margin-top: 1%; font-size: small;">(I verified with my superiors that these clips were permissible to use and that no confidential information was present.)</p></div>
         
         <!-- Second Example (video row)-->
         <div class="row">
         
             <!-- div for embedded video-->
-            <div class="card" style="width: 42%; margin-top: 2%; margin-left: 3%; margin-right: 2.5%; border-radius: 20px;">
+            <div class="card" style="width: 42%; margin-top: 1%; margin-left: 2.75%; margin-right: 1%; border-radius: 20px;">
                 <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 2%; margin-bottom: 2%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
                     <source src="{{url_for('static', filename='PXL_20240906_202221972.mp4')}}" type="video/mp4">
                     This video is not supported by your browser.
                 </video>
             </div>
-            <div class="col" style="width:auto; margin-top: 2%;">
+            <div class="col" style="width:auto; margin-top: 1%;">
                 <div class="card" style="width: auto; margin-left: auto; margin-right: 3.5%; border-radius: 20px;">
                     <div class="card-body">
                         <h5>Visible to the left is another useful tool I developed this summer.</h5>
