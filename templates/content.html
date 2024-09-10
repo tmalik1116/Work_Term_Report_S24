@@ -27,6 +27,7 @@
                     <li class="nav-item"><a class="nav-link" href="#job-description">Job Description</a></li>
                     <li class="nav-item"><a class="nav-link" href="#learning-goals">Learning Goals</a></li>
                     <li class="nav-item"><a class="nav-link" href="#overall-reflection">Reflection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion/Ackowledgements</a></li>
                 </ul>
 
             </div>
@@ -142,7 +143,7 @@
             
             <!-- div for embedded video-->
             <div class="card" style="width: 50%; margin-top: 3%; margin-left: auto; margin-right: 2.5%; border-radius: 20px;">
-                <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 1.5%; margin-bottom: 1.5%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
+                <video width="100%" height="100%" controls  muted style="display: block; margin-top: 1.5%; margin-bottom: 1.5%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
                     <source src="{{url_for('static', filename='PXL_20240619_184109334.mp4')}}" type="video/mp4">
                     This video is not supported by your browser.
                 </video>
@@ -156,7 +157,7 @@
         
             <!-- div for embedded video-->
             <div class="card" style="width: 42%; margin-top: 1%; margin-left: 2.75%; margin-right: 1%; border-radius: 20px;">
-                <video width="100%" height="100%" controls autoplay muted style="display: block; margin-top: 2%; margin-bottom: 2%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
+                <video width="100%" height="100%" controls  muted style="display: block; margin-top: 2%; margin-bottom: 2%; margin-left: 0%; margin-right: 0%; object-fit: cover !important; border-radius: 12px !important;">
                     <source src="{{url_for('static', filename='PXL_20240906_202221972.mp4')}}" type="video/mp4">
                     This video is not supported by your browser.
                 </video>
@@ -300,22 +301,64 @@
 
 
         <div style="margin-bottom: 5%;"></div>
-        <!--Goals subheading-->
+        <!-- Reflection Heading-->
         <div id="overall-reflection" class="mt-4 p-5 text-white" style="width: 97%; margin: auto; background-color:rgb(105, 0, 151); border-radius: 20px;"> <!--Styling doesn't work, use actual CSS at top of file-->
             <h2>Overall Reflection</h2>
         </div>
 
         <div id="end-row" class="row" style="margin-top: 3%;">
-            <div class="card" style="width: 49%; border-radius: 20px; margin-left: 2.5%; margin-right: auto; height: auto; overflow: hidden;">
+            <div class="card" style="width: 48%; border-radius: 20px; margin-left: 3%; margin-right: auto; height: auto; overflow: hidden;">
                 <div class="card-body">
                     <h6 style="line-height: 175%;">If I were to sum up my entire experience with Chandos up to this point, I would say that I have tried my best to maximise my career development in a non-ideal job. When I initially accepted this position, I felt like I had already wasted an entire Co-op term by not getting the sort of technical role I was looking for. Although for the first few weeks this remained true, I eventually became more motivated to try and develop myself as much as I could within the limits of the job. As soon as I started working on my numerous mini-projects, I enjoyed my work significantly more and was praised by my superiors for my technical skills. While I worked on these projects I learned how to use a multitude of new software libraries and gained even more experience testing code. I even started new personal projects outside of work as my set of skills and interests grew, with an example being how working with Pandas piqued my interest in ML, prompting me to learn PyTorch. Aside from technical skills, I did gain valuable communication and professional correspondence skills. Although not as marketable or personally interesting as being hands-on with areas of Computer Science, these are skills that will stay with me moving forward in my career and are helpful in all areas of life. I also gained connections with my superiors and left a very positive impression on them, resulting in a grade of Outstanding on my final performance evaluation and serving as another incentive for future employers when considering me. Although I do not plan to continue in construction after this year, I appreciate the value of having connections who would provide a very positive reference for future opportunities elsewhere. In the coming Fall 2024 Co-op term, I am continuing with Chandos and I will try my best to continue the momentum that I found midway through this term. I will continue to work on technical projects to improve my breadth of understanding at work and away from work, and will set myself up as well as I can for the Summer 2025 Co-op term.</h6>
                 </div>
             </div>
 
-            <div class="card" style="width: 44%; margin-right: 2.5%; border-radius: 20px; height: auto;">
-                <img src="{{url_for('static', filename='University of Guelph.svg')}}" style=" display: block; margin-top: auto; margin-bottom: auto;">
+            
+            <div class="card" style="width: 44%; margin-right: 3%; border-radius: 20px; height: auto; background-color: rgb(183, 0, 37);">
+
+                <div class="card" style="width: 99%; margin: auto; border-radius: 12px; height: 96%; background-color: rgb(255, 183, 0);">
+                    <div class="card" style="width: 96%; margin: auto; border-radius: 8px; height: 96%; background-color: black;">
+                        <img src="{{url_for('static', filename='University of Guelph.png')}}" style=" display: block; margin-top: auto;  margin-bottom: auto; margin-left: 10%; margin-right: 10%; filter: invert(1);">
+                    </div>
+                    
+                </div>
             </div>
         </div>
+
+
+
+        <!-- Conclusion heading-->
+        <div style="margin-bottom: 5%;"></div>
+        <div id="conclusion" class="mt-4 p-5 text-white" style="width: 97%; margin: auto; background-color: darkred; border-radius: 20px;"> <!--Styling doesn't work, use actual CSS at top of file-->
+            <h2>Conclusion/Acknowledgements</h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col" style="width:auto; margin-top: 3%;">
+                <div class="card" style="width: auto; margin-left: 3%; margin-right: 2.5%; border-radius: 20px;">
+                    <div class="card-body">
+                        <h5>Thanks SOCS Co-op staff for observing my work term report. I hope it helped you to get an idea of what I gained from this term, what I provided to the company, and the lessons I will take with me going forward. </h5>
+                    </div>
+                </div>
+                <div class="card" style="width: auto; margin-top: 3%; margin-left: 3%; margin-right: 2.5%; border-radius: 20px;">
+                    <div class="card-body">
+                        <h5>I would like to thank the SOCS Co-op coordinators Laura Gatto, Kate McRoberts, and Anne-Marie Zawadzki for any support provided during this work term. <br><br> In addition, I would like to thank my supervisors who gave me the freedom to develop my skills the way I wanted to, those being Houman Pezeshki (Senior Project Manager), Emmanuel Velesrubio (Assistant Project Manager) and Matthew Watson (Project Director). </h5>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- div for embedded video-->
+            <div class="card" style="width: 20%; margin-top: 3%; margin-left: auto; margin-right: 3%; border-radius: 20px;">
+                <a href="https://www.github.com/tmalik1116"><img src="{{url_for('static', filename='github_logo (Copy).png')}}" style="display: block; object-fit: cover; margin-top: 10%; margin-bottom: auto; margin-right: 1%; width: 100%;"></a>
+            </div>
+        </div>
+
+        <div style="margin-top: 10%;">
+            <h6 style="display: block; margin-left: 45%;">Talha Malik 2024</h6>
+
+        </div>
+
 
               
         <script>
