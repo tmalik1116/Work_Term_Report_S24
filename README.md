@@ -1,6 +1,8 @@
 # Work_Term_Report_S24
 Work Term Reflection for my S24 Co-op
 
+https://www.talhamalik.tech
+
 # TODO:
 
 - Figure out frontend (what framework, type of design)
